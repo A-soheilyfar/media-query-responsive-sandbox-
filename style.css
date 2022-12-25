@@ -1,0 +1,164 @@
+
+
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+.container{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+   
+    padding: 10px 20px;
+   
+}
+header p,header h1{
+    width: 80%;
+    }
+
+
+nav{
+    padding-top: 10px;
+}
+nav span{
+    
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border:2px solid #555;
+
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+main .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 5px 10px;
+    
+}
+main .menu span{
+    display: flex;
+    flex-direction: column;
+    color: #555;
+    border-bottom: 1px solid #555 ;
+    margin-bottom: 10px;
+}
+
+main .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 0 auto;
+    
+}
+
+
+
+main .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+       
+}
+
+.cards .card{
+padding: 30px 30px;
+background-color: rgb(121, 121, 121);
+margin:0 20px 0 0;
+font-size: 2rem;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+footer{
+    font-size: 1.1rem;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width:900px){
+body{
+    background-color: rgba(0, 0, 255, 0.24);
+}
+main{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+nav span{
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border:2px solid #555;
+}
+
+main .cards{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+       
+}
+
+main .cards .card{
+    font-size: 1.5rem;
+    padding: 50px;
+    margin-top: 10px;
+    background-color: rgb(189, 149, 253);
+}
+
+
+
+
+
+}
+
+
+@media screen and (max-width:650px){
+    body{
+    background-color: rgba(255, 0, 0, 0.24);
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    main .cards {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    main .cards .card{
+        background-color: rgb(253, 149, 149);
+    }
+    main .menu{
+        display: none;
+    }
+
+    
+
+    header p,header h1{
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 20px;
+        }
+
+
+}
